@@ -1,20 +1,26 @@
 import React from 'react';
 import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
 import { Spotlight } from './ui/Spotlight';
+import { Boxes } from './ui/background-boxes';
 
 function Main() {
   return (
-    <BackgroundGradientAnimation className='w-full h-screen overflow-hidden'>
-      <Spotlight fill='blue' className="-top-40 left-0 md:left-60 md:-top-20"/>
-      <div className='min-h-screen flex items-center justify-center h-full w-full'>
-        <div className='text-center text-white'>
-          <h1 className='font-bold text-6xl'>Harsh Mishra</h1>
-          <p className='my-4 font-semibold'>I am an aspiring Software Engineer & A Student</p>
-          <p className='my-4 font-semibold'>I am also a Full-Stack Developer</p>
+    <div className="w-full h-[50rem] flex flex-col items-center justify-center">
+      <Spotlight />
+      <div className="flex flex-col items-center">
+        <div className="font-extrabold text-8xl text-center">
+          <p className="text-9xl">Harsh Mishra</p>
+          
+        </div>
+        <div className="flex flex-col items-center mt-4 font-semibold font-light">
+          <p>I'M AN ASPIRING SOFTWARE ENGINEER & A STUDENT</p>
+          <p>I'M ALSO A FULL-STACK DEVELOPER</p>
         </div>
       </div>
-    </BackgroundGradientAnimation>
+    </div>
   );
 }
 
 export default Main;
+
+

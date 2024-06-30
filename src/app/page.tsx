@@ -1,5 +1,6 @@
 import Main from "@/components/Main";
 import Navbar from "@/components/Navbar";
+import Project from "@/components/Project";
 import Sparkle from "@/components/Sparkle";
 import Workwm from "@/components/Workwm";
 import { TracingBeam } from "@/components/ui/tracing-beam";
@@ -11,6 +12,7 @@ export default function Home() {
  
     
    <Main/>
+   <Project/>
    <Sparkle/>
    <Workwm />
    </main>
