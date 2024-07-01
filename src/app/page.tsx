@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Main from "@/components/Main";
 import Navbar from "@/components/Navbar";
 import Project from "@/components/Project";
@@ -15,6 +16,7 @@ export default function Home() {
    <Project/>
    <Sparkle/>
    <Workwm />
+   <Footer />
    </main>
   );
 }

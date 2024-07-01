@@ -1,5 +1,7 @@
 import React from 'react';
 import { WavyBackground } from './ui/wavy-background';
+import { Button } from './ui/moving-border';
+import Link from 'next/link';
 
 function WavyBackgroundComponent() {
   return (
@@ -9,6 +11,13 @@ function WavyBackgroundComponent() {
         <p className="text-base md:text-lg text-white text-center mb-4"></p>
         <div className="flex flex-row items-center justify-center mb-10 w-full">
           {/* Additional content or elements */}
+        </div>
+        <div>
+          <Button className=' bg-black font-semibold'>
+            <Link href={"#"}>
+            Contact Me
+            </Link>
+          </Button>
         </div>
       </WavyBackground>
     </div>
