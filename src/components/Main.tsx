@@ -21,8 +21,8 @@ function Main() {
           
         </div>
         <div className="flex flex-col items-center mt-7  font-light">
-          <p>I'M AN ASPIRING SOFTWARE ENGINEER & A STUDENT</p>
-          <p>I'M ALSO A FULL-STACK DEVELOPER</p>
+          <p>I&apos;M AN ASPIRING SOFTWARE ENGINEER & A STUDENT</p>
+          <p>I&apos;M ALSO A FULL-STACK DEVELOPER</p>
         </div>
       </div>
       
