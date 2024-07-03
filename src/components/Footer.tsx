@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Footer() {
   return (
@@ -9,15 +10,15 @@ function Footer() {
           <p className="text-sm">Aspiring Software Engineer & Full-Stack Developer</p>
         </div>
         <div className="flex space-x-4">
-          <a href="https://twitter.com" className="text-white hover:text-gray-400">
-            Twitter
-          </a>
-          <a href="https://youtube.com" className="text-white hover:text-gray-400">
-            YouTube
-          </a>
-          <a href="https://github.com" className="text-white hover:text-gray-400">
-            GitHub
-          </a>
+          <Link href={'https://github.com/harshmishra366'} target='blank'>
+          Github
+          </Link>
+          <Link href={'https://github.com/harshmishra366'} target='blank'>
+          LinkedIn
+          </Link>
+          <Link href={'https://github.com/harshmishra366'} target='blank'>
+          Instagram
+          </Link>
         </div>
         <div className="mt-4 md:mt-0">
           <p className="text-sm">&copy; {new Date().getFullYear()} Harsh Mishra. All rights reserved.</p>

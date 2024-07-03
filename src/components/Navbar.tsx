@@ -11,15 +11,14 @@ function Navbar() {
   return (
     <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 f")}>
     <Menu setActive={setActive}>
-        <Link href={"#"} >
+        <Link href={"/"} >
         <MenuItem setActive={setActive} active={active} item="Home">
 
         </MenuItem>
         </Link>
         <MenuItem setActive={setActive} active={active} item="Skills">
         <div className="text-sm flex-col flex space-y-4">
-        <HoveredLink href="/courses">All Courses</HoveredLink>
-        <HoveredLink href="/requiremnt">All Requirement</HoveredLink>
+        
         </div>
         
 
