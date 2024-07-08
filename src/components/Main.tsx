@@ -2,8 +2,11 @@ import React from 'react';
 import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
 import { Spotlight } from './ui/Spotlight';
 import { Boxes } from './ui/background-boxes';
+import { FlipWords } from './ui/flip-words';
+
 
 function Main() {
+  const words=[" FULL-STACK  DEVELOPER",  " STUDENT"]
   return (
     <BackgroundGradientAnimation>
      
@@ -20,9 +23,12 @@ function Main() {
           <p className="text-8xl">Harsh <br></br>Mishra</p>
           
         </div>
-        <div className="flex flex-col items-center mt-7  font-light">
-          <p>I&apos;M AN ASPIRING SOFTWARE ENGINEER & A STUDENT</p>
-          <p>I&apos;M ALSO A FULL-STACK DEVELOPER</p>
+        <div className=" mt-7  font-light">
+          {/* <p>I&apos;M AN ASPIRING SOFTWARE ENGINEER & A STUDENT</p>
+          <p>I&apos;M ALSO A FULL-STACK DEVELOPER</p> */}
+          <p>I &apos; M ASPIRING SOFTWARE ENGINEER</p>
+          I &apos; M A
+          <FlipWords words={words} duration={2000}/>
         </div>
       </div>
       
