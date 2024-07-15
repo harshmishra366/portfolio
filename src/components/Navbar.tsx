@@ -16,12 +16,9 @@ function Navbar() {
 
         </MenuItem>
         </Link>
-        <Link href={"/s"}>
+        <Link href={"/skills"}>
         <MenuItem setActive={setActive} active={active} item="Skills">
-        <div className="text-sm flex-col flex space-y-4">
         
-        </div>
-      
         
         
 

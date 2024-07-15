@@ -39,15 +39,11 @@ export const BackgroundGradientAnimation = ({
   const [curY, setCurY] = useState(0);
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
+
+  // Setting CSS variables only once
   useEffect(() => {
-    document.body.style.setProperty(
-      "--gradient-background-start",
-      gradientBackgroundStart
-    );
-    document.body.style.setProperty(
-      "--gradient-background-end",
-      gradientBackgroundEnd
-    );
+    document.body.style.setProperty("--gradient-background-start", gradientBackgroundStart);
+    document.body.style.setProperty("--gradient-background-end", gradientBackgroundEnd);
     document.body.style.setProperty("--first-color", firstColor);
     document.body.style.setProperty("--second-color", secondColor);
     document.body.style.setProperty("--third-color", thirdColor);
@@ -56,22 +52,30 @@ export const BackgroundGradientAnimation = ({
     document.body.style.setProperty("--pointer-color", pointerColor);
     document.body.style.setProperty("--size", size);
     document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+  }, [
+    gradientBackgroundStart, gradientBackgroundEnd, firstColor, secondColor, 
+    thirdColor, fourthColor, fifthColor, pointerColor, size, blendingValue
+  ]);
 
+  // Throttling the move function
   useEffect(() => {
-    function move() {
-      if (!interactiveRef.current) {
-        return;
-      }
-      setCurX(curX + (tgX - curX) / 20);
-      setCurY(curY + (tgY - curY) / 20);
-      interactiveRef.current.style.transform = `translate(${Math.round(
-        curX
-      )}px, ${Math.round(curY)}px)`;
-    }
+    const handleAnimation = () => {
+      if (!interactiveRef.current) return;
 
-    move();
-  }, [tgX, tgY]);
+      const newX = curX + (tgX - curX) / 20;
+      const newY = curY + (tgY - curY) / 20;
+
+      if (Math.abs(newX - curX) > 0.1 || Math.abs(newY - curY) > 0.1) {
+        setCurX(newX);
+        setCurY(newY);
+        interactiveRef.current.style.transform = `translate(${Math.round(newX)}px, ${Math.round(newY)}px)`;
+      }
+
+      requestAnimationFrame(handleAnimation);
+    };
+
+    requestAnimationFrame(handleAnimation);
+  }, [curX, curY, tgX, tgY]);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (interactiveRef.current) {
