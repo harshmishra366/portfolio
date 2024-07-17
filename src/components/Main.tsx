@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
 import { Spotlight } from './ui/Spotlight';
-import { Boxes } from './ui/background-boxes';
 import { FlipWords } from './ui/flip-words';
 import { Kanit } from "next/font/google";
 
-function Main() {
-  const words = ["FULL-STACK DEVELOPER", "STUDENT"];
+const kanit = Kanit({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+});
+
+const Main = () => {
+  const words = useMemo(() => ["FULL-STACK DEVELOPER", "STUDENT"], []);
 
   return (
     <BackgroundGradientAnimation>
@@ -15,8 +19,8 @@ function Main() {
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
         />
-        <div className="flex flex-col items-center">
-          <div className="font-extrabold text-8xl text-center ${Kanit} font-sans">
+        <div className={`flex flex-col items-center ${kanit.className}`}>
+          <div className="font-extrabold text-8xl text-center">
             <p className="text-8xl">Harsh <br /> Mishra</p>
           </div>
           <div className="mt-7 font-light">
@@ -31,3 +35,4 @@ function Main() {
 }
 
 export default Main;
+

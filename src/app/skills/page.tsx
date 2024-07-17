@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 function page() {
   return (
-    <div className=' flex  flex-col mt-[7rem]  p-10 w-100%'>
+    <div className=' flex  flex-col mt-[7rem]  p-10 w-100% bg-black'>
 
        <h1 className='px-7 items-center font-bold text-3xl'>Progamming Languages</h1>
         <div className=' px-8 flex flex-row flex-wrap gap-4  w-45 '>

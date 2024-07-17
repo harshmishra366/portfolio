@@ -1,17 +1,21 @@
 import Footer from "@/components/Footer";
 import Main from "@/components/Main";
-import Navbar from "@/components/Navbar";
+
 import Project from "@/components/Project";
 import Sparkle from "@/components/Sparkle";
 import Workwm from "@/components/Workwm";
-import { TracingBeam } from "@/components/ui/tracing-beam";
-import Image from "next/image";
+import Hero from "@/components/Hero"
 
 export default function Home() {
   return (
     <main>
  
     
+   
+   {/* <Hero /> */}
+
+   <Hero/>
+   
    <Main/>
    <Project/>
    <Sparkle/>

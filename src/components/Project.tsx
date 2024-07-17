@@ -4,7 +4,7 @@ import { Vortex } from './ui/vortex'
 
 function Project() {
   return (
-    <div className="w-full mx-auto rounded-md  overflow-hidden bg-gradient-to-b from-gray-800 to-black h-[40rem]">
+    <div className="w-full mx-auto rounded-md  overflow-hidden bg-gradient-to-b from-gray-800 to-black h-[40rem] min-h-screen">
       <Vortex
         backgroundColor="black"
         rangeY={800}
