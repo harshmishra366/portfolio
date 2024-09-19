@@ -21,10 +21,10 @@ const Main = () => {
         />
         <div className={`flex flex-col items-center ${kanit.className}`}>
           <div className="font-extrabold text-8xl text-center">
-            <p className="text-8xl">Harsh <br /> Mishra</p>
+            <p className="text-8xl text-white">Harsh <br /> Mishra</p>
           </div>
-          <div className="mt-7 font-light">
-            <p>I &apos; M ASPIRING SOFTWARE ENGINEER</p>
+          <div className="mt-7 font-light text-white ">
+            <p classname="text-white">I &apos; M ASPIRING SOFTWARE ENGINEER</p>
             I &apos; M A
             <FlipWords words={words} duration={2000} />
           </div>
