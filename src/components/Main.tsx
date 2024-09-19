@@ -24,7 +24,7 @@ const Main = () => {
             <p className="text-8xl text-white">Harsh <br /> Mishra</p>
           </div>
           <div className="mt-7 font-light text-white ">
-            <p classname="text-white">I &apos; M ASPIRING SOFTWARE ENGINEER</p>
+            <p className="text-white">I &apos; M ASPIRING SOFTWARE ENGINEER</p>
             I &apos; M A
             <FlipWords words={words} duration={2000} />
           </div>
