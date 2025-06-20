@@ -29,20 +29,10 @@ const Main = () => {
               I&apos;M A <FlipWords words={words} duration={2000} />
             </p>
           </div>
-        </div>
-
-        {/* Right Section - Animated 3D Cube */}
-        <div className="md:w-1/2 p-6 flex items-center justify-center">
-          <div className="scene">
-            <div className="cube">
-              <div className="face front">const</div>
-              <div className="face back">stack</div>
-              <div className="face right">=</div>
-              <div className="face left">"MERN"</div>
-              <div className="face top">☕</div>
-              <div className="face bottom">💻</div>
-            </div>
-            <div className="cube-label">const dev = true;</div>
+          <div className="mt-7 font-light">
+            <p>I &apos; M ASPIRING SOFTWARE ENGINEER</p>
+            I &apos; M A
+            <FlipWords words={words} duration={2000} />
           </div>
         </div>
       </div>
