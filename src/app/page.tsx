@@ -1,26 +1,33 @@
+"use client";
 import Footer from "@/components/Footer";
 import Main from "@/components/Main";
 
-import Project from "@/components/Project";
+import { Project } from "@/components/Project";
 import Sparkle from "@/components/Sparkle";
 import Workwm from "@/components/Workwm";
-import Hero from "@/components/Hero"
+import ImageTrail from '@/components/ui/ImageTrail'
+
 
 export default function Home() {
   return (
     <main>
+     
+
  
     
    
    {/* <Hero /> */}
 
-   <Hero/>
    
    <Main/>
-   <Project/>
+   
+   
    <Sparkle/>
+   <Project/>
    <Workwm />
+  
    <Footer />
+
    </main>
   );
 }

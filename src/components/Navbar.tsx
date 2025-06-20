@@ -25,12 +25,14 @@ function Navbar() {
 
         </MenuItem>
         </Link>
-        <MenuItem setActive={setActive} active={active} item="Work">
+        
+
+       
+        <Link href={"/contact"}>
+        <MenuItem setActive={setActive} active={active} item="Contact Me">
 
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Contact Us">
-
-        </MenuItem>
+        </Link>
        
 
         

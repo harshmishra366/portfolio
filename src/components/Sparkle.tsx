@@ -70,7 +70,8 @@ const content = [
 
 function Sparkle() {
   return (
-    <div className="relative h-[35rem] overflow-hidden bg-slate-900">
+    <div className="relative  overflow-hidden ">
+      
     
      
       
