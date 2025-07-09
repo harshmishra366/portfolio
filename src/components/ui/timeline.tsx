@@ -41,7 +41,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
           My Work Experience Timeline
           <span className="text-neutral-500 dark:text-neutral-400"> 
-            (Click on the timeline to scroll)
+            
           </span>
         </h2>
         
