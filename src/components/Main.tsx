@@ -1,5 +1,6 @@
 "use client";
 import React, { useMemo } from "react";
+import Image from "next/image";
 import { FlipWords } from "./ui/flip-words";
 import { Kanit } from "next/font/google";
 
@@ -33,7 +34,7 @@ const Main = () => {
 
         {/* Right Section - Animated 3D Cube */}
         <div className="md:w-1/2 p-6 flex items-center justify-center">
-          <div className="scene">
+          {/* <div className="scene">
             <div className="cube">
               <div className="face front">const</div>
               <div className="face back">stack</div>
@@ -43,7 +44,15 @@ const Main = () => {
               <div className="face bottom">💻</div>
             </div>
             <div className="cube-label">const dev = true;</div>
-          </div>
+          </div> */}
+          <Image
+            src="/ui.gif"  
+            alt="3D Cube Animation"
+            width={300}
+
+            height={300}
+            className="w-full h-auto"
+          />
         </div>
       </div>
 

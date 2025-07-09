@@ -14,7 +14,7 @@ function WavyBackgroundComponent() {
         </div>
         <div>
           <Button className=' bg-black font-semibold'>
-            <Link href={"#"}>
+            <Link href={"/contact"} className="text-white">
             Contact Me
             </Link>
           </Button>
